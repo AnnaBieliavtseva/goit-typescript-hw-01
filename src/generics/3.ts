@@ -1,5 +1,13 @@
 function merge<T extends object, U extends object>(objA: T, objB: U) {
   return Object.assign(objA, objB);
 }
+type Person = {
+  name: string
+}
+type Location = {
+  city: string
+}
 
-console.log(merge({name: 'Anna'}, {city: 'Kharkiv'}));
+const merged = merge<Person, Location>({ name: 'Anna' }, { city: 'Kharkiv' });
+console.log(merged);
+
