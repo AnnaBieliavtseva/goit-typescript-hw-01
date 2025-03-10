@@ -1,5 +1,5 @@
-type unionTypeVar = string | number;
-let unionVar: unionTypeVar = 2;
-let union1Var: unionTypeVar = 'hello';
+type unionTypeVar = 'enable' | 'disable';
+let unionVar: unionTypeVar = 'enable';
+let union1Var: unionTypeVar = 'disable';
 
 console.log(unionVar, union1Var);
